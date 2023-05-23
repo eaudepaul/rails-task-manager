@@ -1,0 +1,14 @@
+<h1>Edit a task</h1>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+<% end %>
+
+<br>
+ <%= link_to "See your tasks?", "/tasks" %>
